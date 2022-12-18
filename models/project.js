@@ -1,9 +1,10 @@
 let client = require("../dbConnect");
 let projectCollection;
 
+
 setTimeout(() => {
-     projectCollection = client.db().collection("Projects");
-    }, 2000)
+    projectCollection = client.db().collection("pets");
+    }, 200000)
     
   
   // insert
@@ -18,4 +19,4 @@ setTimeout(() => {
 
 
 
-module.exports= {insertProjects, getProjects,};
+module.exports = {insertProjects, getProjects};
